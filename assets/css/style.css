@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=PT+Mono&family=Source+Sans+Pro&display=swap');
+
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'PT Mono', monospace;
+    font-family: 'Source Sans Pro', sans-serif; */
+    background-color: rgb(255, 212, 155);
+    background-image: url("../images/unsplash-pastel.jpg");
+    background-size: cover;
+    /* background-repeat: round; */
+    background-position: center center;
+    color: #484848;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 0.227);
+    border-radius: 2rem;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3); */
+}
+
+.mobile-text-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin-top: 2.5rem;
+}
+
+.large-text-span-mobile {
+    width: 85%;
+}
+
+
+aside {
+    display: none;
+}
+
+h1 {
+    font-size: xx-large;
+    margin: 0rem;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: large;
+    margin-top: 2rem;
+}
+
+h3, h4, h5 {
+    font-size: 1.17em;
+}
+
+i {
+    font-size: xx-large;
+}
+
+a {
+    text-decoration: none;
+    color: #364b6b;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #3d7ddd;
+    cursor: pointer;
+}
+
+.link-article {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.small-container-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 200px;
+}
+
+.small-container-span p {
+    margin: 0.4rem;
+}
+
+
+.profile-text-p {
+    width: 80%;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.break-line {
+    /* background-color: #ffffff; */
+    border-bottom: 2px solid #ffffff;
+    /* height: 1rem; */
+    display: block;
+    width: 85%;
+}
+
+/* nav */
+
+nav {
+    margin-top: 1rem;
+}
+
+button {
+    background: linear-gradient(#ffffff, #affffa);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    width: 110px;
+    border: 0.8px solid rgb(255, 199, 189);
+
+    transition: 300ms;
+    max-width: 100%;
+    min-width: 120px;
+}
+
+button p {
+    margin: 0;
+    font-size: medium;
+}
+
+button:hover,
+button:active {
+    box-shadow: rgba(255, 68, 121, 0.5) 0 2px 9px;
+}
+
+button:active {
+    background: linear-gradient(#5efff4, #ffd6d6);
+}
+
+
+/* mobile specific info */
+
+.mobile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+/* Main */
+main {
+    /* margin: 2rem; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+main section {
+    display: block;
+    width: 100%;
+}
+
+.header-article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding-left: 2rem;
+}
+
+.link-info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #b0dead;
+    min-height: 5rem;
+}
+
+.link-info-section article a {
+    border-radius: 50%;
+    background-color: #552929;
+    padding: 0.5rem;
+    /* width: 3rem;
+    height: 3rem; */
+    margin: 1rem;
+    color: #ffffff;
+}
+
+.link-info-section article a img {
+    width: 5rem;
+    height: 5rem;
+    color:#ffffff;
+}
+
+/* project section */
+/* Card carousel, pop-up eller overlay som växer över index-z */
+.project-card {
+    border-radius: 10px;
+    border: 1px solid #000000;
+    /* width: 18rem; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.project-section img {
+    width: 200px;
+    height: 100px;
+    grid-column-start: 1;
+}
+
+.project-section span {
+    width: 200px;
+    height: 100px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+
+  @media only screen and (min-width: 769px) {
+   
+    /* Aside */
+    aside {
+        background-color: #93fff8;
+        background: linear-gradient(#affffa, #ffaeae);
+        opacity: 0.7;
+        /* background-image: url("../images/orbifolia-edit.jpg"); */
+        /* opacity: 0.2; */
+        color: white;
+        max-width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+    
+    article .link-article {
+        display: none;
+    }
+    aside .link-article span {
+        color: #000000;
+    }
+  }
+
+
+/* 
+  320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV */
